@@ -28,7 +28,7 @@ export default function SecureKeypairRotation() {
   const [history, setHistory] = useState<RotationHistory[]>([]);
   const [is2FAEnabled, setIs2FAEnabled] = useState(false);
 
-  const baseURL = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://analos-nft-backend-minimal-production.up.railway.app';
+  const baseURL = '/api/proxy';
 
   useEffect(() => {
     if (publicKey) {

@@ -2,8 +2,8 @@
 // Centralized configuration for all backend API calls
 
 export const BACKEND_CONFIG = {
-  // Production backend URL
-  BASE_URL: process.env.NEXT_PUBLIC_BACKEND_URL || 'https://analos-nft-backend-minimal-production.up.railway.app',
+  // Route through Next.js server proxy; server reads real backend URL
+  BASE_URL: '/api/proxy',
   
   // API endpoints
   ENDPOINTS: {
@@ -20,9 +20,6 @@ export const BACKEND_CONFIG = {
     WEBHOOK_STOP_LISTENER: '/api/webhook/stop-listener',
     WEBHOOK_STATUS: '/api/webhook/status',
   },
-  
-  // API Key for authentication
-  API_KEY: 'a6ffe279-a627-4623-8cc4-266785cf0eaf',
   
   // Request timeout (in milliseconds)
   TIMEOUT: 30000,
@@ -43,7 +40,6 @@ export const buildApiUrl = (endpoint: string): string => {
 export const getApiHeaders = (additionalHeaders: Record<string, string> = {}): Record<string, string> => {
   return {
     'Content-Type': 'application/json',
-    'x-api-key': BACKEND_CONFIG.API_KEY,
     ...additionalHeaders,
   };
 };

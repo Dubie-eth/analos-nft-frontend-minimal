@@ -1,15 +1,15 @@
 /**
  * Backend API Client
  * Centralized service for all backend API calls
- * Connected to: https://analos-nft-backend-minimal-production.up.railway.app
+ * Client-side calls are routed through Next.js server proxy
  */
 
 // Backend Configuration
 export const BACKEND_CONFIG = {
-  BASE_URL: process.env.NEXT_PUBLIC_BACKEND_URL || 'https://analos-nft-backend-minimal-production.up.railway.app',
-  API_KEY: process.env.NEXT_PUBLIC_API_KEY || 'a6ffe279-a627-4623-8cc4-266785cf0eaf',
+  // Always call server-side proxy; backend URL and API key are server-only
+  BASE_URL: '/api/proxy',
   TIMEOUT: 30000, // 30 seconds
-};
+} as const;
 
 // API Endpoints
 export const API_ENDPOINTS = {
@@ -60,12 +60,10 @@ export interface RPCProxyResponse {
  */
 export class BackendAPIClient {
   private baseURL: string;
-  private apiKey: string;
   private timeout: number;
 
   constructor() {
     this.baseURL = BACKEND_CONFIG.BASE_URL;
-    this.apiKey = BACKEND_CONFIG.API_KEY;
     this.timeout = BACKEND_CONFIG.TIMEOUT;
     
     console.log('🔗 Backend API Client initialized');
@@ -82,7 +80,6 @@ export class BackendAPIClient {
     const url = `${this.baseURL}${endpoint}`;
     
     const headers = new Headers(options.headers);
-    headers.set('x-api-key', this.apiKey);
     
     if (!headers.has('Content-Type') && !(options.body instanceof FormData)) {
       headers.set('Content-Type', 'application/json');

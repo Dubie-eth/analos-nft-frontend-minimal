@@ -33,11 +33,12 @@ npm start
 
 ## 🔧 Environment Variables
 
-Create a `.env.local` file:
+Create a `.env.local` file (server-only vars):
 
 ```env
-NEXT_PUBLIC_BACKEND_URL=https://analos-nft-backend-minimal-production.up.railway.app
-NEXT_PUBLIC_API_URL=https://analos-nft-backend-minimal-production.up.railway.app
+# Server-side only; used by Next.js API proxy
+BACKEND_URL=https://analos-nft-backend-minimal-production.up.railway.app
+BACKEND_API_KEY=REDACTED
 ```
 
 ## 📁 Project Structure
@@ -63,9 +64,8 @@ frontend-minimal/
 
 ## 🔗 Backend Integration
 
-This frontend is designed to work with the minimal backend:
-- **Backend URL**: `analos-nft-backend-minimal-production.up.railway.app`
-- **Program ID**: `7kdBbyZetzrU8eCCA83FeA3o83ohwyvLkrD8W1nMcmDk`
+This frontend is designed to work with the minimal backend via a server proxy:
+- Calls route through `GET/POST /api/proxy/*` to the backend
 
 ## 🎯 Key Components
 
