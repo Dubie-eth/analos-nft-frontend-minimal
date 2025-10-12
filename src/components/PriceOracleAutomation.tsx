@@ -38,7 +38,7 @@ export default function PriceOracleAutomation() {
 
   const loadStatus = async () => {
     try {
-      const response = await fetch(`${backendAPI['baseURL']}/api/oracle/automation/status`);
+      const response = await fetch(`/api/proxy/api/oracle/automation/status`);
       const data = await response.json();
       
       if (data.success) {
@@ -59,7 +59,7 @@ export default function PriceOracleAutomation() {
     setMessage('');
     
     try {
-      const response = await fetch(`${backendAPI['baseURL']}/api/oracle/automation/start`, {
+      const response = await fetch(`/api/proxy/api/oracle/automation/start`, {
         method: 'POST',
       });
       
@@ -83,7 +83,7 @@ export default function PriceOracleAutomation() {
     setMessage('');
     
     try {
-      const response = await fetch(`${backendAPI['baseURL']}/api/oracle/automation/stop`, {
+      const response = await fetch(`/api/proxy/api/oracle/automation/stop`, {
         method: 'POST',
       });
       
@@ -107,7 +107,7 @@ export default function PriceOracleAutomation() {
     setMessage('');
     
     try {
-      const response = await fetch(`${backendAPI['baseURL']}/api/oracle/automation/config`, {
+      const response = await fetch(`/api/proxy/api/oracle/automation/config`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
