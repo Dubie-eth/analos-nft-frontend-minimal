@@ -1,0 +1,90 @@
+{
+  "fetchedAt": "2025-10-14T03:09:02+00:00",
+  "owner": "Dubie-eth",
+  "repositories": [
+    {
+      "defaultBranch": "master",
+      "forkCount": 0,
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "name": "analos-nft-frontend-minimal",
+      "nameWithOwner": "Dubie-eth/analos-nft-frontend-minimal",
+      "pushedAt": "2025-10-14T03:05:43Z",
+      "stargazerCount": 0,
+      "updatedAt": "2025-10-14T03:05:47Z",
+      "url": "https://github.com/Dubie-eth/analos-nft-frontend-minimal",
+      "visibility": "PUBLIC"
+    },
+    {
+      "defaultBranch": "master",
+      "forkCount": 0,
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "name": "analos-nft-launcher",
+      "nameWithOwner": "Dubie-eth/analos-nft-launcher",
+      "pushedAt": "2025-10-14T02:26:16Z",
+      "stargazerCount": 0,
+      "updatedAt": "2025-10-13T03:19:28Z",
+      "url": "https://github.com/Dubie-eth/analos-nft-launcher",
+      "visibility": "PUBLIC"
+    },
+    {
+      "defaultBranch": "main",
+      "forkCount": 0,
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "name": "analos-programs",
+      "nameWithOwner": "Dubie-eth/analos-programs",
+      "pushedAt": "2025-10-12T20:50:40Z",
+      "stargazerCount": 0,
+      "updatedAt": "2025-10-12T20:50:44Z",
+      "url": "https://github.com/Dubie-eth/analos-programs",
+      "visibility": "PUBLIC"
+    },
+    {
+      "defaultBranch": "master",
+      "forkCount": 0,
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "name": "analos-nft-backend-minimal",
+      "nameWithOwner": "Dubie-eth/analos-nft-backend-minimal",
+      "pushedAt": "2025-10-10T16:57:53Z",
+      "stargazerCount": 0,
+      "updatedAt": "2025-10-10T16:57:56Z",
+      "url": "https://github.com/Dubie-eth/analos-nft-backend-minimal",
+      "visibility": "PUBLIC"
+    },
+    {
+      "defaultBranch": "main",
+      "forkCount": 0,
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "name": "analos-nft-launchpad-program",
+      "nameWithOwner": "Dubie-eth/analos-nft-launchpad-program",
+      "pushedAt": "2025-10-10T13:59:36Z",
+      "stargazerCount": 0,
+      "updatedAt": "2025-10-10T13:59:40Z",
+      "url": "https://github.com/Dubie-eth/analos-nft-launchpad-program",
+      "visibility": "PUBLIC"
+    },
+    {
+      "defaultBranch": "main",
+      "forkCount": 0,
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "name": "AnalosNFTLauncher",
+      "nameWithOwner": "Dubie-eth/AnalosNFTLauncher",
+      "pushedAt": "2025-09-28T02:15:03Z",
+      "stargazerCount": 0,
+      "updatedAt": "2025-10-02T03:06:49Z",
+      "url": "https://github.com/Dubie-eth/AnalosNFTLauncher",
+      "visibility": "PUBLIC"
+    }
+  ]
+}

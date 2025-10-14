@@ -1,0 +1,56 @@
+{
+  "owner": "Dubie-eth",
+  "updatedAt": "2025-10-14T03:09:02+00:00",
+  "repos": [
+    {
+      "nameWithOwner": "Dubie-eth/analos-nft-frontend-minimal",
+      "openPRs": 1,
+      "latestAction": null
+    },
+    {
+      "nameWithOwner": "Dubie-eth/analos-nft-launcher",
+      "openPRs": 1,
+      "latestAction": {
+        "status": "completed",
+        "conclusion": "failure",
+        "event": "push",
+        "head_branch": "build-with-github-actions",
+        "head_sha": "8b0e33966278d6fc098b9d301f873134582b31f6",
+        "html_url": "https://github.com/Dubie-eth/analos-nft-launcher/actions/runs/18483571469",
+        "name": "Build Solana Programs",
+        "created_at": "2025-10-14T02:26:18Z",
+        "updated_at": "2025-10-14T02:29:51Z"
+      }
+    },
+    {
+      "nameWithOwner": "Dubie-eth/analos-programs",
+      "openPRs": 0,
+      "latestAction": null
+    },
+    {
+      "nameWithOwner": "Dubie-eth/analos-nft-backend-minimal",
+      "openPRs": 0,
+      "latestAction": null
+    },
+    {
+      "nameWithOwner": "Dubie-eth/analos-nft-launchpad-program",
+      "openPRs": 0,
+      "latestAction": null
+    },
+    {
+      "nameWithOwner": "Dubie-eth/AnalosNFTLauncher",
+      "openPRs": 0,
+      "latestAction": {
+        "status": "completed",
+        "conclusion": "failure",
+        "event": "push",
+        "head_branch": "main",
+        "head_sha": "26edbfaac6c703ecb37066443486d74d9abff4e3",
+        "html_url": "https://github.com/Dubie-eth/AnalosNFTLauncher/actions/runs/18067957580",
+        "name": "CI/CD Pipeline",
+        "created_at": "2025-09-28T02:15:05Z",
+        "updated_at": "2025-09-28T02:18:46Z"
+      }
+    }
+  ]
+}
