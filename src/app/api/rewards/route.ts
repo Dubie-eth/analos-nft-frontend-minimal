@@ -28,7 +28,7 @@ export async function GET(request: NextRequest) {
 
     // Try to get user's rewards (gracefully handle missing tables)
     try {
-      const { data: rewards, error: rewardsError } = await supabaseAdmin
+      const { data: rewards, error: rewardsError } = await (supabaseAdmin as any)
         .from('creator_rewards')
         .select(`
           *,
@@ -119,7 +119,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create new reward
-    const { data, error } = await supabaseAdmin
+    const { data, error } = await (supabaseAdmin as any)
       .from('creator_rewards')
       .insert({
         user_wallet: userWallet,
