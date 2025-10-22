@@ -13,7 +13,8 @@
     "start": "next start",
     "lint": "next lint",
     "create-page": "node scripts/create-isolated-page.js",
-    "backfill-metadata": "ts-node scripts/backfill-nft-metadata.ts"
+    "backfill-metadata": "ts-node scripts/backfill-nft-metadata.ts",
+    "mint-tracker": "tsx scripts/telegram-mint-tracker.ts"
   },
   "dependencies": {
     "@analosfork/dynamic-bonding-curve-sdk": "^1.0.3",
@@ -39,7 +40,8 @@
     "react-dom": "^18.2.0",
     "recharts": "^3.3.0",
     "speakeasy": "^2.0.0",
-    "tailwindcss": "^3.4.0"
+    "tailwindcss": "^3.4.0",
+    "telegraf": "^4.16.3"
   },
   "devDependencies": {
     "@types/crypto-js": "^4.2.2",
@@ -49,6 +51,7 @@
     "eslint": "^8.56.0",
     "eslint-config-next": "15.5.4",
     "pino-pretty": "^13.1.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.3.3"
   },
   "keywords": [
