@@ -31,3 +31,9 @@ RATE_LIMIT_MAX_REQUESTS=100
 # LOGGING
 LOG_LEVEL=info
 LOG_FILE_PATH=./logs/app.log
+
+# SERVICE CONFIG
+# Public base URL of your deployed app (used for Telegram webhooks)
+PUBLIC_BASE_URL=https://your-domain.com
+# Admin key for protected service endpoints (send as x-service-key)
+SERVICE_ADMIN_KEY=change_me_super_secret_key
