@@ -13,8 +13,7 @@
     "start": "next start",
     "lint": "next lint",
     "create-page": "node scripts/create-isolated-page.js",
-    "backfill-metadata": "ts-node scripts/backfill-nft-metadata.ts",
-    "mint-tracker": "tsx scripts/telegram-mint-tracker.ts"
+    "backfill-metadata": "ts-node scripts/backfill-nft-metadata.ts"
   },
   "dependencies": {
     "@analosfork/dynamic-bonding-curve-sdk": "^1.0.3",

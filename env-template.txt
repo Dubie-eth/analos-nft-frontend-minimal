@@ -32,6 +32,3 @@ RATE_LIMIT_MAX_REQUESTS=100
 LOG_LEVEL=info
 LOG_FILE_PATH=./logs/app.log
 
-# TELEGRAM BOT (for NFT mint tracker)
-TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
-TELEGRAM_CHAT_ID=-1001234567890
