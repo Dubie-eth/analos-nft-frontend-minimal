@@ -16,6 +16,12 @@ const nextConfig: NextConfig = {
         tls: false,
       }
     }
+    // Silence optional peer dependency warnings from pino by aliasing to false
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      'pino-pretty': false as unknown as string,
+      'sonic-boom': false as unknown as string,
+    }
     return config
   },
   images: {
