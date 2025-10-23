@@ -3,7 +3,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "bash scripts/start.sh",
+    "startCommand": "PORT=${PORT:-3000} npm run start",
     "healthcheckPath": "/api/health-simple",
     "healthcheckTimeout": 300,
     "restartPolicyType": "ON_FAILURE",
